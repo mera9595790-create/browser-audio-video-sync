@@ -101,14 +101,14 @@ namespace Configurator
                 var trackBar = new TrackBar();
                 trackBar.Left = label.Left;
                 trackBar.Minimum = 0;
-                trackBar.Maximum = 500;
+                trackBar.Maximum = 700;
                 trackBar.ValueChanged += (sender, e) =>
                 {
                     lblValue.Text = trackBar.Value + "ms";
                     endpoint.Delay = (uint)trackBar.Value;
                     SetDelay(endpoint);
                 };
-                trackBar.Value = Math.Max(0, Math.Min(500, (int)endpoint.Delay));
+                trackBar.Value = Math.Max(0, Math.Min(700, (int)endpoint.Delay));
                 trackBar.Width = lblValue.Left - trackBar.Left - padding;
                 trackBar.Top = curY;
                 trackBar.TickFrequency = 100;
