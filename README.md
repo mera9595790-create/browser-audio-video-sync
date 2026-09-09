@@ -12,7 +12,8 @@
 [gurux13/chrome-audio-delay](https://github.com/gurux13/chrome-audio-delay)
 и статьи https://habr.com/ru/articles/664966/, но работает со всеми браузерами:
 **Chrome, Edge, Яндекс.Браузер** (общий механизм `audio.mojom.AudioService`) и
-**Firefox** (AudioIPC/главный процесс).
+**Firefox** (AudioIPC/главный процесс). Идея теста задержки звука/видео взята из
+[Trogen898/Frame-Sync](https://github.com/Trogen898/Frame-Sync).
 
 ## Возможности
 
@@ -101,7 +102,8 @@ The approach follows
 [gurux13/chrome-audio-delay](https://github.com/gurux13/chrome-audio-delay)
 and https://habr.com/ru/articles/664966/, but works with all browsers:
 **Chrome, Edge, Yandex.Browser** (shared `audio.mojom.AudioService` mechanism) and
-**Firefox** (AudioIPC / main process).
+**Firefox** (AudioIPC / main process). The audio/video delay test idea is taken from
+[Trogen898/Frame-Sync](https://github.com/Trogen898/Frame-Sync).
 
 ## Features
 
