@@ -1,10 +1,12 @@
-# AV Sync Delay — компенсация задержки беспроводного (Bluetooth) аудио
+# AV Sync Delay — компенсация задержки аудио
 
 Универсальный инструмент для Windows: исправляет рассинхронизацию видео и звука при
-просмотре в браузерах через Bluetooth-наушники (A2DP). Задержка звука (~150–250 мс и
-больше) не учитывается системой, поэтому видео опережает звук. Программа внедряет DLL
-в аудио-процессы браузеров и подменяет показания `IAudioClock::GetPosition`, заставляя
-штатный A/V-sync браузера задерживать видео ровно на измеренную задержку.
+просмотре в браузерах через наушники с задержкой звука — **Bluetooth (A2DP)** или
+**проводные** устройства с буферизацией. Задержка звука (~150–250 мс и больше, в
+зависимости от устройства) не учитывается системой, поэтому видео опережает звук.
+Программа внедряет DLL в аудио-процессы браузеров и подменяет показания
+`IAudioClock::GetPosition`, заставляя штатный A/V-sync браузера задерживать видео ровно
+на измеренную задержку.
 
 Подход повторяет идею
 [gurux13/chrome-audio-delay](https://github.com/gurux13/chrome-audio-delay)
@@ -86,10 +88,11 @@
 
 ---
 
-# AV Sync Delay — wireless (Bluetooth) audio delay compensation
+# AV Sync Delay — audio delay compensation
 
 A universal Windows tool that fixes video/audio desync when watching videos in a
-browser over Bluetooth headphones (A2DP). The audio delay (~150–250 ms and up) is not
+browser over headphones with audio latency — **Bluetooth (A2DP)** or **wired** devices
+with buffering. The audio delay (~150–250 ms and up, depending on the device) is not
 accounted for by the OS, so video leads audio. The program injects a DLL into the
 browsers' audio processes and patches `IAudioClock::GetPosition`, making the browser's
 native A/V-sync delay the video by exactly the measured delay.
